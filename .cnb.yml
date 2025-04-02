@@ -1,0 +1,19 @@
+$:
+  # vscode 事件：专供页面中启动远程开发用
+  vscode:
+    - docker:
+        # 自定义镜像作为开发环境
+        image: cnbcool/default-dev-env:latest
+      services:
+        - vscode
+        - docker
+      runner :
+        cpus: 1
+      imports: https://cnb.cool/ChuangYiLLC/Tech/secrets/-/blob/sdcom/docker.yml
+      stages:
+        - name: ls
+          script: ls -al
+        - name: docker-codeserver
+          script: code-server --install-extension ritwickdey.LiveServer
+        - name: sudo
+          script: apt-get update && apt-get install -y sudo curl wget
