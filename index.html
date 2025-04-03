@@ -1,4 +1,6 @@
 <html>
+
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,7 +12,7 @@
     <link rel="shortcut icon" href="Picture/tubiao.jpeg">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <!-- <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> -->
+    <!-- <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script> -->    
     <script src="js/autoload.js"></script>
     <script>
         fetch("https://v1.hitokoto.cn/")
@@ -18,18 +20,31 @@
             .then(data => susays.innerText = data.hitokoto);
     </script>
     <style>
-        body {
-            font-size: 18px;
-            color: #6c767d;
-            background-color: #ebf1f5;
-            background-image: url(https://api.imlazy.ink/img);
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-            min-height: 800px;
-        }
+
+        
+    body {
+    font-size: 18px;
+    color: #6c767d;
+    background-color: #ebf1f5;
+    background-image: url(https://api.imlazy.ink/img);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 800px;
+}
+ 
+        
     </style>
+    
+
+    </iframe>
+
+   
+
+
+
+
 </head>
 
 <body>
@@ -37,110 +52,89 @@
         <i class="fa fa-bars btn-mobile-menu__icon"></i>
         <i class="fa fa-chevron-circle-up btn-mobile-close__icon hidden"></i>
     </span>
-    
     <div class="panel-main">
         <div class="panel-main__inner panel-inverted">
             <div class="panel-main__content">
-                <a href="https://sdcom.cnstlapy.cn/" title="SDCOM">
-                    <img src="Picture/tubiao.jpeg" width="150" alt="LOGO" class="panel-cover__logo logo">
-                </a>
-                <h1 class="panel-cover__title panel-title">
-                    <a href="https://sdcom.cnstlapy.cn/" title="">SDCOM</a>
-                </h1>
-                <span class="panel-cover__subtitle panel-subtitle">
-                    <script>hitokoto()</script>
-                </span>
-                
-                <hr class="panel-cover__divider">
-                <p class="panel-cover__description" id="susays"></p>
-                <hr class="panel-cover__divider">
-                <p class="panel-cover__description">欢迎来到SDCOMの小世界！</p>
-                
-                <p class="footer">
-                    Copyright © 2025 <a href="https://icp.gov.moe/?keyword=20254150" target="_blank">SDCOM</a> All Rights Reserved. 萌ICP备20254150号<br>
-                    网站由<a href="https://hydun.com" target="_blank">火毅盾云安全</a>提供防护及CDN加速服务
-                </p>
+                <a href="https://sdcom.cnstlapy.cn/" title="SDCOM"><img src="Picture/tubiao.jpeg" width="150" alt="LOGO" class="panel-cover__logo logo"></a>
+                <h1 class="panel-cover__title panel-title"><a href="https://sdcom.cnstlapy.cn/" title="">SDCOM</a></h1>
+                <span class="panel-cover__subtitle panel-subtitle"><script>hitokoto()</script>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description" id="susays"></p>
+        <hr class="panel-cover__divider"> 
+        <p class="panel-cover__description">欢迎来到SDCOMの小世界！</p>
+	<p class="footer">Copyright © 2025 <a href="https://icp.gov.moe/?keyword=20254150" target="_blank">SDCOM</a> All Rights Reserved. 萌ICP备20254150号<br>网站由<a href="https://hydun.com" target="_blank">火毅盾云安全</a>提供防护及CDN加速服务</p>
 
-                <div class="navigation-wrapper">
-                    <div>
-                        <nav class="cover-navigation cover-navigation--primary">
-                            <ul class="navigation">
-                                <li class="navigation__item">
-                                    <a href="https://sdcom.cnstlapy.cn/" title="博客">BLOG</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="https://dl.sdcom.asia/" title="下载站">下载站</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="old" title="旧的首页">旧的首页</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    
-                    <div>
-                        <nav class="cover-navigation navigation--social">
-                            <ul class="navigation">
-                                <!-- 聊天 -->
-                                <li class="navigation__item">
-                                    <a href="https://chat.sdcom.asia/" title="chatgpt" target="_blank">
-                                        <i class="social fa fa-code"></i>
-                                    </a>
-                                </li>
-                                
-                                <!-- QQ -->
-                                <li class="navigation__item">
-                                    <a href="https://wpa.qq.com/msgrd?v=3&uin=3243756665&site=qq&menu=yes&jumpflag=1" title="QQ" target="_blank">
-                                        <i class="social fa fa-qq"></i>
-                                    </a>
-                                </li>
-                                
-                                <!-- PAN -->
-                                <li class="navigation__item">
-                                    <a href="https://pan.sdcom.asia/" title="网盘" target="_blank">
-                                        <i class="social fa fa-code"></i>
-                                    </a>
-                                </li>
-                                
-                                <!-- WJ -->
-                                <li class="navigation__item">
-                                    <a href="https://dz.sdcom.asia" rel="author" title="下载站" target="_blank">
-                                        <i class="social fa fa-code"></i>
-                                    </a>
-                                </li>
-                                
-                                <!-- LLXSQ -->
-                                <!-- <li class="navigation__item">
-                                    <a href="https://w45.sdcom.asia/1.html" title="流量消失器">
-                                        <i class="social fa fa-code"></i> -->
-                                
-                                <!-- JK -->
-                                <!-- <li class="navigation__item">
-                                    <a href="https://550c.sdcom.asia/" title="550c泰裤啦">
-                                        <i class="social fa fa-thermometer"></i>
-                                    </a>
-                                </li>-->
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                  
+                <li class="navigation__item"><a href="https://sdcom.cnstlapy.cn/" title="博客">BLOG</a></li>
+                
+               
+                
+                <li class="navigation__item"><a href="https://dl.sdcom.asia/" title="下载站">下载站</a></li>
+                <li class="navigation__item"><a href="old" title="旧的首页">旧的首页</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+          
+<div>
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+  <!-- 聊天 -->
+  <li class="navigation__item">
+    <a href="https://chat.sdcom.asia/" title="chatgpt" target="_blank">
+      <i class="social fa fa-code"></i>
+    </a>
+  </li>
+  <!-- QQ -->
+  <li class="navigation__item">
+    <a href="https://wpa.qq.com/msgrd?v=3&uin=3243756665&site=qq&menu=yes&jumpflag=1" title="QQ" target="_blank">
+      <i class="social fa fa-qq"></i>
+    </a>
+  </li>
+  
+  <!-- PAN -->
+  <li class="navigation__item">
+    <a href="https://pan.sdcom.asia/" title="网盘" target="_blank">
+      <i class="social fa fa-code"></i>
+    </a>
+  </li>
+  <!-- WJ -->
+  <li class="navigation__item">
+    <a href="https://dz.sdcom.asia" rel="author" title="下载站" target="_blank">
+      <i class="social fa fa-code"></i>
+    </a>
+  </li>
+  <!-- LLXSQ -->
+  <!-- <li class="navigation__item">
+    <a href="https://w45.sdcom.asia/1.html" title="流量消失器">
+      <i class="social fa fa-code"></i> -->
+
+      <!-- JK -->
+  <!-- <li class="navigation__item">
+    <a href="https://550c.sdcom.asia/" title="550c泰裤啦">
+      <i class="social fa fa-thermometer"></i>
+    </a>
+  </li>-->
+
+  </ul>
+</nav>
+</div>
         </div>
-        <div class="panel-cover--overlay cover-slate"></div>
+      </div>
     </div>
+    <div class="panel-cover--overlay cover-slate"></div>
+  </div>
 </header>
 
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
-    console.log("%c%c版权%c © 2025 铭城网络工作室 未经作者允许禁止使用！", 
-        "line-height:28px;", 
-        "line-height:28px;padding:4px;background:#00a650;color:#fff;border-radius: 5px;font-size:16px;margin-right:15px", 
-        "color:#f0f;line-height:28px;font-size:16px;");
-    console.log("%c%c支持%c © 2025 网站由火毅盾云安全提供防护及CDN加速服务", 
-        "line-height:28px;", 
-        "line-height:28px;padding:4px;background:#00a650;color:#fff;border-radius: 5px;font-size:16px;margin-right:15px", 
-        "color:#f0f;line-height:28px;font-size:16px;");
+	console.log("%c%c版权%c © 2025 铭城网络工作室 未经作者允许禁止使用！", "line-height:28px;", "line-height:28px;padding:4px;background:#00a650;color:#fff;border-radius: 5px;font-size:16px;margin-right:15px", "color:#f0f;line-height:28px;font-size:16px;");
+  console.log("%c%c支持%c © 2025 网站由火毅盾云安全提供防护及CDN加速服务", "line-height:28px;", "line-height:28px;padding:4px;background:#00a650;color:#fff;border-radius: 5px;font-size:16px;margin-right:15px", "color:#f0f;line-height:28px;font-size:16px;");
 </script>
 </body>
 </html>
