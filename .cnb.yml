@@ -9,7 +9,7 @@ $:
         - docker
       runner :
         cpus: 1
-      imports: https://cnb.cool/ChuangYiLLC/Tech/secrets/-/blob/sdcom/docker.yml
+      imports: https://cnb.cool/BlueScreen-Studio/Tech/secrets/-/blob/sdcom/github.yml
       stages:
         - name: ls
           script: ls -al
