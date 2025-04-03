@@ -32,4 +32,5 @@ $:
             password: ${GIT_ACCESS_TOKEN}
             git_user: ${GIT_USERNAME}
             git_email: ${GIT_EMAIL}
+            force: true
             branch: main      
