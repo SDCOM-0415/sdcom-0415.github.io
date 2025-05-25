@@ -1,22 +1,32 @@
 $:
-  # vscode 事件：专供页面中启动远程开发用
+# 网页远程开发
   vscode:
-    - docker:
-        # 自定义镜像作为开发环境
-        image: cnbcool/default-dev-env:latest
-      services:
-        - vscode
-        - docker
-      runner :
-        cpus: 1
-      imports: https://cnb.cool/BlueScreen-Studio/Tech/secrets/-/blob/sdcom/github.yml
-      stages:
-        - name: ls
-          script: ls -al
-        - name: docker-codeserver
-          script: code-server --install-extension ritwickdey.LiveServer
-        - name: sudo
-          script: apt-get update && apt-get install -y sudo curl wget
+  - services:
+    - docker
+    - vscode
+    runner:
+      cpus: 1
+    docker:
+      build: .ide/Dockerfile
+    env:
+      CNB_WELCOME_CMD: fastfetch
+    stages:
+      - name: update dependencies
+        script: fastfetch
+
+# VS code打开   
+  api_trigger_cnb_dev_plugin:
+  - services:
+    - docker
+    - vscode
+    docker:
+      build: .ide/Dockerfile
+    env:
+      CNB_WELCOME_CMD: fastfetch
+    stages:
+      - name: update dependencies
+        script: fastfetch
+
   # Push 事件: 推送时使用
   push: 
     - runner: 
