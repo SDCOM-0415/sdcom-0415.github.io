@@ -1,6 +1,6 @@
-# Personal Website Project
+# sdcom-0415.github.io
 
-这是一个现代化的个人网站项目，具有响应式设计和优雅的用户界面。
+欢迎访问https://www.sdcom.asia/ ，这是我的个人网站。
 
 ## 功能特点
 
@@ -68,7 +68,7 @@ MIT License
 ## 贡献指南
 
 1. Fork 本项目
-2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的改动 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
+2. 创建你的特性分支 
+3. 提交你的改动 
+4. 推送到分支 
 5. 开启一个 Pull Request
