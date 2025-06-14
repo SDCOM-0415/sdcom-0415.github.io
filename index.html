@@ -37,24 +37,16 @@
         stroke: currentColor;
         fill: currentColor;
         vertical-align: middle;
-        will-change: transform;
-        backface-visibility: hidden;
-        transform: translate3d(0, 0, 0);
-        -webkit-transform: translate3d(0, 0, 0);
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        perspective: 1000;
-        -webkit-perspective: 1000;
-        transform-style: preserve-3d;
-        -webkit-transform-style: preserve-3d;
     }
-    .navigation__item .custom-icon {
-        transition: transform 0.1s cubic-bezier(0.23, 1, 0.32, 1);
-        -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.23, 1, 0.32, 1);
+    .navigation__item a {
+        transition: all 0.3s;
     }
-    .navigation__item:hover .custom-icon {
-        transform: translate3d(0, 0, 0) scale(1.12);
-        -webkit-transform: translate3d(0, 0, 0) scale(1.12);
+    .navigation__item a:hover {
+        color: #FFF;
+        background: #FF7F00;
+        border-color: #FF7F00;
+        opacity: 1;
+        transition: all 0.3s;
     }
     </style>
 </head>
@@ -75,7 +67,7 @@
                 <hr class="panel-cover__divider">
                 <p class="panel-cover__description">欢迎来到SDCOMの小世界！</p>
                 <div style="text-align: center; margin: 20px 0;">
-                    <a href="https://sdcom.top" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #e74c3c; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: transform 0.1s cubic-bezier(0.23, 1, 0.32, 1), background-color 0.1s ease; transform: translate3d(0, 0, 0); will-change: transform, background-color;">新域名！</a>
+                    <a href="https://sdcom.top" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #e74c3c; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 0.3s ease;">新域名！</a>
                 </div>
                 <p class="footer">Copyright © 2025 <a href="https://icp.gov.moe/?keyword=20254150" target="_blank">SDCOM</a> All Rights Reserved. 萌ICP备20254150号<br>网站由<a href="https://hydun.com" target="_blank">火毅盾云安全</a>提供防护及CDN加速服务</p>
                 <div class="navigation-wrapper">
