@@ -22,13 +22,25 @@
         font-size: 18px;
         color: #6c767d;
         background-color: #ebf1f5;
-        background-image: url(https://api.imlazy.ink/img);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
         min-height: 800px;
     }
+    </style>
+    <script>
+    // 检测设备类型并设置对应的背景图
+    function setBackgroundByDevice() {
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        document.body.style.backgroundImage = isMobile ? 
+            'url(https://api.imlazy.ink/img-phone)' : 
+            'url(https://api.imlazy.ink/img)';
+    }
+    // 页面加载完成后执行
+    window.addEventListener('load', setBackgroundByDevice);
+    </script>
+    <style>
     .custom-icon {
         display: inline-block;
         width: 22px;
