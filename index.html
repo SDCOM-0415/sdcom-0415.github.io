@@ -37,12 +37,24 @@
         stroke: currentColor;
         fill: currentColor;
         vertical-align: middle;
+        will-change: transform;
+        backface-visibility: hidden;
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        perspective: 1000;
+        -webkit-perspective: 1000;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
     }
     .navigation__item .custom-icon {
-        transition: all 0.3s ease;
+        transition: transform 0.1s cubic-bezier(0.23, 1, 0.32, 1);
+        -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.23, 1, 0.32, 1);
     }
     .navigation__item:hover .custom-icon {
-        transform: scale(1.2);
+        transform: translate3d(0, 0, 0) scale(1.12);
+        -webkit-transform: translate3d(0, 0, 0) scale(1.12);
     }
     </style>
 </head>
