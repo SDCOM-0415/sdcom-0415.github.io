@@ -29,6 +29,21 @@
         height: 100vh;
         min-height: 800px;
     }
+    .custom-icon {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+    .navigation__item .custom-icon {
+        transition: all 0.3s ease;
+    }
+    .navigation__item:hover .custom-icon {
+        transform: scale(1.2);
+    }
     </style>
 </head>
 
@@ -63,27 +78,39 @@
                         <nav class="cover-navigation navigation--social">
                             <ul class="navigation">
                                 <!-- 聊天 -->
-                                <li class="navigation__item">
+                                <!--<li class="navigation__item">
                                     <a href="https://chat.sdcom.asia/" title="chatgpt" target="_blank">
                                         <i class="social fa fa-code"></i>
                                     </a>
-                                </li>
-                                <!-- QQ -->
-                                <li class="navigation__item">
-                                    <a href="https://wpa.qq.com/msgrd?v=3&uin=3243756665&site=qq&menu=yes&jumpflag=1" title="QQ" target="_blank">
-                                        <i class="social fa fa-qq"></i>
-                                    </a>
-                                </li>
+                                </li>-->
                                 <!-- PAN -->
-                                <li class="navigation__item">
+                                <!--<li class="navigation__item">
                                     <a href="https://pan.sdcom.asia/" title="网盘" target="_blank">
-                                        <i class="social fa fa-code"></i>
+                                        <i class="social fa fa-cloud-download"></i>
+                                    </a>
+                                </li>-->
+                                <!-- WJ -->
+                                <!--<li class="navigation__item">
+                                    <a href="https://dz.sdcom.asia" rel="author" title="下载站" target="_blank">
+                                        <i class="social fa fa-download"></i>
+                                    </a>
+                                </li>-->
+                                <!-- 邮箱 -->
+                                <li class="navigation__item">
+                                    <a href="mailto:sdcom@sdcom.asia" title="联系邮箱" target="_blank">
+                                        <i class="social fa fa-envelope"></i>
                                     </a>
                                 </li>
-                                <!-- WJ -->
+                                <!-- GitHub -->
                                 <li class="navigation__item">
-                                    <a href="https://dz.sdcom.asia" rel="author" title="下载站" target="_blank">
-                                        <i class="social fa fa-code"></i>
+                                    <a href="https://github.com/SDCOM-0415" title="GitHub" target="_blank">
+                                        <i class="social fa fa-github"></i>
+                                    </a>
+                                </li>                          
+                                <!-- CNB - 使用外部SVG文件 -->
+                                <li class="navigation__item">
+                                    <a href="https://cnb.cool/SDCOM" title="CNB" target="_blank">
+                                        <img src="Picture/cnb-favicon.svg" class="custom-icon" alt="CNB">
                                     </a>
                                 </li>
                                 <!-- LLXSQ -->
