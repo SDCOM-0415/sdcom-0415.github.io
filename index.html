@@ -59,12 +59,34 @@
         stroke-width: 0;
         stroke: currentColor;
         fill: currentColor;
-        vertical-align: -4px;
+        vertical-align: middle;
         margin: 0;
         padding: 0;
     }
+    .navigation__item {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+    }
     .navigation__item a {
         transition: all 0.3s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 8px;
+        margin: 0;
+        height: 34px;
+    }
+    .navigation--social a {
+        padding: 6px 8px;
+    }
+    .social {
+        font-size: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
     }
     .navigation__item a:hover {
         color: #FFF;
@@ -148,7 +170,7 @@
                                     <a href="https://github.com/SDCOM-0415/sdcom-0415.github.io" title="GitHub" target="_blank">
                                         <i class="social fa fa-github"></i>
                                     </a>
-                                </ul>                        
+                                </li>                        
                                 <!-- CNB - 使用外部SVG文件 -->
                                 <li class="navigation__item">
                                     <a href="https://cnb.cool/SDCOM/Web/www.sdcom.asia" title="CNB" target="_blank">
